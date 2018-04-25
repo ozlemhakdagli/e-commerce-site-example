@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Jquery dersi 2</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+
+	$(".kucuk").mouseover(function(){
+		var src = $(this).attr("src");
+		$("#buyuk").attr('src',src);
+	})
+
+});
+
+
+</script>
+
+</head>
+<body>
+
+	<img src="1.png" width="610" id="buyuk"><br>
+	<img src="1.png" width="150" class="kucuk">
+	<img src="2.png" width="150" class="kucuk">
+	<img src="3.png" width="150" class="kucuk">
+	<img src="4.png" width="150" class="kucuk">
+
+
+
+
+</body>
+</html>
